@@ -1,0 +1,163 @@
+.work{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+.project-col .heading{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 20px;
+    border-top: 1.5px solid #CCCCCC;
+    border-bottom: 1.5px solid #CCCCCC;
+    margin-bottom: 25px;
+}
+.project-col .heading h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #101D42;
+}
+.project-list{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 20px;
+    border-radius: 8px;
+}
+.project-list .project{
+    border-bottom: 1.5px solid #CCCCCC;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 2fr auto;
+    gap: 8px;
+}
+.project-list .project:last-child{
+    padding-bottom: 0;
+    border: none;
+}
+.project .project-type{
+    font-size: 14px;
+    font-weight: 500;
+    grid-column: span 2;
+    color: #101D42;
+}
+.project .project-name{
+    font-size: 17px;
+    font-weight: 500;
+    color: #0D1317;
+}
+.project .project-url{
+    text-align: right;
+}
+.project .project-url a{
+    background-color: #232ED1;
+    padding: 4px 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.image-col{
+    position: relative;
+}
+.image-col img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.image-col .cat-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FFFFFF;
+    color: #0D1317;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 30px;
+    z-index: 999;
+}
+
+@media (max-width: 992px) {
+    .work {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .project-col .heading h2 {
+      font-size: 22px;
+    }
+  
+    .project-list .project {
+      grid-template-columns: 1fr;
+      text-align: left;
+    }
+  
+    .project .project-type {
+      font-size: 13px;
+    }
+  
+    .project .project-name {
+      font-size: 16px;
+    }
+  
+    .project .project-url {
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    .project .project-url a {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  
+    .image-col img {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .work {
+      padding: 20px;
+    }
+  
+    .project-col .heading {
+      padding: 15px;
+    }
+  
+    .project-col .heading h2 {
+      font-size: 20px;
+    }
+  
+    .project-list {
+      padding: 15px;
+    }
+  
+    .project-list .project {
+      padding: 20px 0;
+    }
+  
+    .project .project-name {
+      font-size: 15px;
+    }
+  
+    .project .project-type {
+      font-size: 12px;
+    }
+  
+    .project .project-url a {
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+  
+    .image-col .cat-name {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

@@ -1,0 +1,197 @@
+.project-lauch{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.project-lauch .continer{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 30px;
+    border-radius: 8px;
+}
+.main-heading h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #101D42;
+    margin-bottom: 12px;
+}
+.main-heading p{
+    font-size: 16px;
+    color: #101D42;
+}
+
+.steps-box{
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.steps-box .step{
+    background-color: rgba(16, 29, 66, 0.071);
+    border-radius: 8px;
+    padding: 15px;
+}
+.steps-box .step .step-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.name-logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #101D42;
+}
+.name-logo img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.step-num{
+    font-size: 20px;
+    font-weight: 500;
+    color: #a3a1a1;
+}
+.step-text p{
+    font-size: 14px;
+    color: #101D42;
+}
+.btn-text{
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-text p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #101D42;
+}
+.git-download-btn{
+    display: flex;
+    gap: 12px;
+}
+.git-download-btn a{
+    background-color: #0D1317;
+    border: 1.5px solid #0D1317;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.git-download-btn a i{
+    font-size: 20px;
+}
+.git-download-btn a.outline-btn{
+    border: 1.5px solid #0D1317;
+    background-color: transparent;
+    color: #0D1317;
+}
+
+
+@media (max-width: 992px) {
+    .main-heading h2 {
+      font-size: 22px;
+    }
+  
+    .main-heading p {
+      font-size: 15px;
+    }
+  
+    .steps-box {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .step-text p {
+      font-size: 13px;
+    }
+  
+    .step-num {
+      font-size: 18px;
+    }
+  
+    .name-logo {
+      font-size: 13px;
+    }
+  
+    .btn-text {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .btn-text p {
+      font-size: 13px;
+    }
+  
+    .git-download-btn a {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  
+    .git-download-btn a i {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .project-lauch {
+      padding: 20px;
+    }
+    .git-download-btn{
+      width: 100%;
+    }
+    .git-download-btn a{
+      flex-grow: 1;
+    }
+    .project-lauch .continer {
+      padding: 20px;
+    }
+  
+    .main-heading h2 {
+      font-size: 20px;
+    }
+  
+    .main-heading p {
+      font-size: 14px;
+    }
+  
+    .name-logo {
+      font-size: 12px;
+    }
+  
+    .name-logo img {
+      width: 22px;
+      height: 22px;
+    }
+  
+    .step-num {
+      font-size: 16px;
+    }
+  
+    .step-text p {
+      font-size: 12px;
+    }
+  
+    .btn-text p {
+      font-size: 12px;
+    }
+  
+    .git-download-btn a {
+      font-size: 10px;
+      padding: 6px 10px;
+    }
+  
+    .git-download-btn a i {
+      font-size: 16px;
+    }
+  }
+  

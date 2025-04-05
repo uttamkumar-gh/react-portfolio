@@ -1,0 +1,165 @@
+.about{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 60px 30px 20px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.image-col{
+    position: relative;
+}
+.image-col img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about-content{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 30px 18px 18px 18px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-content h2{
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #101D42;
+}
+.about-content p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #101D42;
+}
+
+.experince-col .heading{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 20px;
+    border-top: 1.5px solid #CCCCCC;
+    border-bottom: 1.5px solid #CCCCCC;
+    margin-bottom: 25px;
+}
+.experince-col .heading h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #101D42;
+}
+.experience-list{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 20px;
+    border-radius: 8px;
+}
+.experience-list .experince{
+    border-bottom: 1.5px solid #CCCCCC;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.experience-list .experince:last-child{
+    padding-bottom: 0;
+    border: none;
+}
+.experince .position-name{
+    font-size: 18px;
+    font-weight: 500;
+    grid-column: span 2;
+    color: #0D1317;
+}
+.experince .company-name{
+    font-size: 12px;
+    font-weight: 600;
+    color: #101D42;
+}
+.experince .work-duration{
+    font-size: 14px;
+    font-weight: 600;
+    color: #232ED1;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .about {
+      grid-template-columns: 1fr;
+      padding: 40px 20px;
+    }
+  
+    .image-col img {
+      position: static;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .about-content {
+      padding: 20px;
+    }
+  
+    .about-content h2 {
+      font-size: 22px;
+    }
+  
+    .about-content p {
+      font-size: 13px;
+    }
+  
+    .experince-col .heading h2 {
+      font-size: 22px;
+    }
+  
+    .experience-list {
+      padding: 15px;
+    }
+  
+    .experience-list .experince {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 15px 0;
+    }
+  
+    .experince .position-name {
+      font-size: 16px;
+    }
+  
+    .experince .company-name {
+      font-size: 12px;
+    }
+  
+    .experince .work-duration {
+      font-size: 13px;
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about {
+      padding: 30px 15px;
+    }
+  
+    .about-content h2,
+    .experince-col .heading h2 {
+      font-size: 20px;
+    }
+  
+    .about-content p,
+    .experince .company-name,
+    .experince .work-duration {
+      font-size: 12px;
+    }
+  
+    .experience-list .experince {
+      padding: 12px 0;
+    }
+  
+    .experince .position-name {
+      font-size: 15px;
+    }
+  }
+  

@@ -1,0 +1,135 @@
+.testimonial-section{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+.heading{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    padding: 20px;
+    border-top: 1.5px solid #CCCCCC;
+    border-bottom: 1.5px solid #CCCCCC;
+    margin-bottom: 25px;
+}
+.heading h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: #101D42;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.testimonial{
+    background-color: hsla(224, 61%, 16%, 0.039);
+    border-radius: 8px;
+    padding: 30px;
+}
+.testimonial-client{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D1317;
+    margin-bottom: 30px;
+}
+.testimonial-client img{
+    width: 40px;
+    height: 40px;
+}
+.testimonial-text{
+    margin-bottom: 30px;
+}
+.testimonial-text p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #101D42;
+}
+.client-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.client-name img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.name-postion{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.name-postion .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D1317;
+}
+.name-postion .position{
+    font-size: 12px;
+    color: #101D42;
+}
+
+@media (max-width: 992px) {
+    .testimonials {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+      gap: 20px;
+    }
+  
+    .testimonial {
+      padding: 20px;
+    }
+  
+    .testimonial-client {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .testimonial-text p {
+      font-size: 13px;
+    }
+  
+    .heading h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .testimonials {
+      grid-template-columns: 1fr; /* Stack on small screens */
+    }
+  
+    .testimonial {
+      padding: 16px;
+    }
+  
+    .testimonial-client {
+      font-size: 16px;
+    }
+  
+    .testimonial-text p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+  
+    .heading h2 {
+      font-size: 20px;
+    }
+  
+    .client-name img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .name-postion .name {
+      font-size: 13px;
+    }
+  
+    .name-postion .position {
+      font-size: 11px;
+    }
+  }
+  
