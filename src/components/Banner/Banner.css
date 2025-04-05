@@ -123,13 +123,6 @@
       justify-content: space-between;
       gap: 20px;
     }
-    .industry-list {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      gap: 20px;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-    }
   }
   
   @media (max-width: 576px) {
